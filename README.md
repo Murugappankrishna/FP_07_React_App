@@ -39,6 +39,8 @@
 - Serve the React application's content over the network, enabling users to access the AI-assisted voice pair programming tool remotely.
 
 ## SetUp - React App
+- This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+
 ### Prerequisites
 
 ### Install Node JS
@@ -111,7 +113,7 @@ NGINX's architecture is built around an event-driven model, featuring:
 - **Master Process:** Responsible for managing worker processes, configuration loading, and signal handling.
 - **Worker Processes:** Handle client connections and execute requests asynchronously, allowing NGINX to handle a large number of concurrent connections efficiently.
 
-### Web Serving: Serving Static Content Efficiently:
+## Web Serving: Serving Static Content Efficiently:
 NGINX is optimized for serving static content, offering several advantages:
 - **Asynchronous I/O:** NGINX's event-driven architecture enables it to handle numerous concurrent connections efficiently without creating separate threads or processes for each connection.
 - **File Caching:** NGINX can cache static files in memory, reducing disk I/O and improving response times for frequently accessed content.
@@ -161,3 +163,26 @@ server_name <Raspberry_Pi_IP>;
 sudo systemctl restart nginx
 ```
 Now, you can access the NGINX-served webpage from any device on your local network by entering the Raspberry Pi's IP address or hostname in the web browser.
+## Setup - python script over Raspberry Pi 
+### Prerequisites
+- python 2 or higher 
+Refer to https://www.python.org/downloads/ to install python
+- Then use pip to install the following 
+```bash
+ pip install requests 
+pip install json
+```
+
+- Raspberry Pi os is flashed in a SD card and inserted in the Raspberry Pi 
+- [Raspberry Pi  OS] reference ("https://www.raspberrypi.com/software/")
+- the microphone is connected and configuration are maded using  alsamixer
+- To run clone the python file and run it over a desired IDE 
+  
+
+
+
+
+
+
+
+
